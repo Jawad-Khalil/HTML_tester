@@ -263,7 +263,7 @@ section a {
 
 .education-table th, .education-table td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
     text-align: left;
 }
 
@@ -272,34 +272,34 @@ section a {
     font-weight: bold;
 }
 
-/* Stack table cells vertically on small screens */
+.education-table th:nth-child(1), .education-table td:nth-child(1) {
+    width: 5%; /* Adjust the width as needed for the first column */
+    text-align: center;
+}
+
+.education-table th:nth-child(2), .education-table td:nth-child(2) {
+    width: 30%; /* Adjust the width as needed for the second column */
+}
+
+.education-table th:nth-child(3), .education-table td:nth-child(3) {
+    width: 30%; /* Adjust the width as needed for the third column */
+}
+
+.education-table th:nth-child(4), .education-table td:nth-child(4) {
+    width: 15%; /* Adjust the width as needed for the fourth column */
+    text-align: center;
+}
+
+.education-table th:nth-child(5), .education-table td:nth-child(5) {
+    width: 20%; /* Adjust the width as needed for the fifth column */
+}
+
 @media (max-width: 767px) {
     .education-table {
         font-size: 12px; /* Reduce font size on smaller screens */
     }
     .education-table th, .education-table td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .education-table th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-        text-align: center;
-    }
-    .education-table td {
-        border-top: 1px solid #ddd;
-        position: relative;
-        padding-left: 50%; /* For label display */
-        text-align: right;
-    }
-    .education-table td::before {
-        content: attr(data-label); /* Create a label for each cell */
-        position: absolute;
-        left: 10px;
-        top: 8px;
-        display: block;
-        font-weight: bold;
+        padding: 8px; /* Reduce padding for better fit */
     }
 }
 
@@ -312,7 +312,7 @@ section a {
 
 .certificate-table th, .certificate-table td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
     text-align: left;
 }
 
@@ -321,34 +321,30 @@ section a {
     font-weight: bold;
 }
 
-/* Stack table cells vertically on small screens */
+.certificate-table th:nth-child(1), .certificate-table td:nth-child(1) {
+    width: 10%; /* Adjust the width as needed for the first column */
+    text-align: center;
+}
+
+.certificate-table th:nth-child(2), .certificate-table td:nth-child(2) {
+    width: 40%; /* Adjust the width as needed for the second column */
+}
+
+.certificate-table th:nth-child(3), .certificate-table td:nth-child(3) {
+    width: 30%; /* Adjust the width as needed for the third column */
+    text-align: center;
+}
+
+.certificate-table th:nth-child(4), .certificate-table td:nth-child(4) {
+    width: 20%; /* Adjust the width as needed for the fourth column */
+}
+
 @media (max-width: 767px) {
     .certificate-table {
         font-size: 12px; /* Reduce font size on smaller screens */
     }
     .certificate-table th, .certificate-table td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .certificate-table th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-        text-align: center;
-    }
-    .certificate-table td {
-        border-top: 1px solid #ddd;
-        position: relative;
-        padding-left: 50%; /* For label display */
-        text-align: right;
-    }
-    .certificate-table td::before {
-        content: attr(data-label); /* Create a label for each cell */
-        position: absolute;
-        left: 10px;
-        top: 8px;
-        display: block;
-        font-weight: bold;
+        padding: 8px; /* Reduce padding for better fit */
     }
 }
 
