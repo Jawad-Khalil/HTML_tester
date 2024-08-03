@@ -276,11 +276,10 @@ section a {
     font-weight: bold;
 }
 
-/* Education Table */
 .education-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px; /* Adjust the font size for better readability */
+    font-size: 14px; /* Default font size */
 }
 
 .education-table th, .education-table td {
@@ -316,12 +315,34 @@ section a {
     width: 20%; /* Adjust the width as needed for the fifth column */
 }
 
-@media (max-width: 767px) {
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
     .education-table {
-        font-size: 12px; /* Reduce font size on smaller screens */
+        font-size: 10px; /* Smaller font size on smaller screens */
     }
+
     .education-table th, .education-table td {
-        padding: 8px; /* Reduce padding for better fit */
+        padding: 4px; /* Reduced padding for smaller screens */
+    }
+
+    .education-table th:nth-child(1), .education-table td:nth-child(1) {
+        width: 10%; /* Adjust width for better fit on small screens */
+    }
+
+    .education-table th:nth-child(2), .education-table td:nth-child(2) {
+        width: 25%; /* Adjust width for better fit on small screens */
+    }
+
+    .education-table th:nth-child(3), .education-table td:nth-child(3) {
+        width: 25%; /* Adjust width for better fit on small screens */
+    }
+
+    .education-table th:nth-child(4), .education-table td:nth-child(4) {
+        width: 15%; /* Adjust width for better fit on small screens */
+    }
+
+    .education-table th:nth-child(5), .education-table td:nth-child(5) {
+        width: 15%; /* Adjust width for better fit on small screens */
     }
 }
 
