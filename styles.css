@@ -234,6 +234,7 @@ p {
     width: 100%;  /* Full width for better responsiveness */
     border-collapse: collapse;
     font-size: 14px; /* Default font size */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
 }
 
 .info-table th, .info-table td {
@@ -251,24 +252,23 @@ p {
     width: 75%; /* Adjust the width as needed */
 }
 
-/* Responsive styles for the info table */
-@media (max-width: 767px) {
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
     .info-table {
-        font-size: 12px; /* Reduce font size on smaller screens */
+        font-size: 12px; /* Slightly smaller font size on smaller screens */
     }
 
     .info-table th, .info-table td {
-        padding: 8px; /* Reduce padding for better fit */
+        padding: 8px; /* Reduced padding for smaller screens */
     }
 
-    .info-table td {
-        display: block; /* Display cells as block elements */
-        width: 100%; /* Full width for better layout */
-        box-sizing: border-box; /* Ensure padding is included in the width */
+    .info-table td:nth-child(2) {
+        width: auto; /* Reset width for better fitting on small screens */
     }
-    
-    .info-table tr {
-        margin-bottom: 15px; /* Add space between rows */
+
+    /* Optional: Add horizontal scrolling for smaller screens */
+    .info-table-wrapper {
+        overflow-x: auto; /* Allow horizontal scrolling */
     }
 }
 
