@@ -231,8 +231,9 @@ p {
 
 /* Info Table */
 .info-table {
-    width: 100%;  /* Overall width */
+    width: 100%;  /* Full width for better responsiveness */
     border-collapse: collapse;
+    font-size: 14px; /* Default font size */
 }
 
 .info-table th, .info-table td {
@@ -250,6 +251,47 @@ p {
     width: 75%; /* Adjust the width as needed */
 }
 
+/* Responsive styles for the info table */
+@media (max-width: 767px) {
+    .info-table {
+        font-size: 12px; /* Reduce font size on smaller screens */
+    }
+
+    .info-table th, .info-table td {
+        padding: 8px; /* Reduce padding for better fit */
+    }
+
+    .info-table td {
+        display: block; /* Display cells as block elements */
+        width: 100%; /* Full width for better layout */
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+
+    .info-table thead {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    .info-table tr {
+        margin-bottom: 15px; /* Add space between rows */
+        display: block; /* Make rows block elements */
+    }
+
+    .info-table td::before {
+        content: attr(data-label); /* Use attribute data-label for header labels */
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+/* Optional: Add styles for data-label attribute */
+.info-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
 section a {
     font-weight: bold;
 }
