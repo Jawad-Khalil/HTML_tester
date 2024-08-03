@@ -184,7 +184,7 @@ border: 2px solid #3498db; /* Border color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
   margin-bottom: 15px;
   margin-rignt: 15px;
-  padding-left: 70px; /* Adjust this value to decrease the left side */
+  padding-left: 20px; /* Adjust this value to decrease the left side */
 }
 
 @media only screen and (max-width: 767px) {
