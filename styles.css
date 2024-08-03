@@ -284,14 +284,6 @@ p {
     }
 }
 
-/* Optional: Add styles for data-label attribute */
-.info-table td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
 section a {
     font-weight: bold;
 }
