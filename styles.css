@@ -109,17 +109,6 @@ header {
     object-fit: cover; /* Ensures the image is cropped to cover the entire container */
 }
 
-@media (max-width: 767px) {
-    .profile-container {
-        height: auto; /* Adjust height for smaller screens */
-    }
-
-    .profile-image {
-        width: 200px;
-        height: 200px;
-    }
-}
-
 /* Main section styles */
 main {
     padding: 20px;
