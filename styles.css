@@ -76,15 +76,6 @@ header {
     text-decoration: underline; /* Underline only when hovered */
 }
 
-/* Responsive Menu */
-@media only screen and (max-width: 767px) {
-    .menu ul li {
-        display: block; /* Stack menu items vertically on smaller screens */
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 10px; /* Add bottom margin */
-    }
-}
-
 .container {
     max-width: 1300px;
     margin: 0 auto;
