@@ -266,14 +266,9 @@ p {
         width: 100%; /* Full width for better layout */
         box-sizing: border-box; /* Ensure padding is included in the width */
     }
-
-    .info-table thead {
-        display: none; /* Hide table headers on small screens */
-    }
-
+    
     .info-table tr {
         margin-bottom: 15px; /* Add space between rows */
-        display: block; /* Make rows block elements */
     }
 }
 
