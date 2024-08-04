@@ -1,28 +1,39 @@
-
-function toggleMenu() {
-  const menu = document.getElementById('menu');
-  menu.classList.toggle('active');
-}
-
-window.addEventListener("scroll", function () {
-    var scrollBtn = document.getElementById("scrollToTopBtn");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollBtn.style.display = "block";
-    } else {
-        scrollBtn.style.display = "none";
+document.addEventListener('DOMContentLoaded', function() {
+    const hash = window.location.hash;
+    if (hash) {
+        const targetElement = document.querySelector(hash);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
     }
+
+    // Scroll to top button functionality
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Navigation menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const navList = document.getElementById('navList');
+    const navLinks = navList.querySelectorAll('a');
+
+    menuBtn.addEventListener('click', () => {
+        navList.style.display = navList.style.display === 'block' ? 'none' : 'block';
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navList.style.display = 'none';
+        });
+    });
 });
-
-function scrollToTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-document.getElementById("scrollToTopBtn").addEventListener("click", scrollToTop);
-
-// Add this script at the end of your HTML or in a separate JS file
-document.addEventListener("DOMContentLoaded", function() {
-    const currentYear = new Date().getFullYear();
-    document.getElementById("footerYear").textContent = currentYear;
-});
-
