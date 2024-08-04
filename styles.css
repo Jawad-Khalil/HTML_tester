@@ -110,7 +110,7 @@ header {
     object-fit: cover; /* Ensures the image is cropped to cover the entire container */
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 718px) {
     .profile-container {
         height: 40vh; /* Adjust height for very small screens */
     }
