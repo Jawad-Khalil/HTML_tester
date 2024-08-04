@@ -364,10 +364,10 @@ section a {
 
 @media (max-width: 767px) {
     .certificate-table {
-        font-size: 12px; /* Reduce font size on smaller screens */
+        font-size: 10px; /* Reduce font size on smaller screens */
     }
     .certificate-table th, .certificate-table td {
-        padding: 8px; /* Reduce padding for better fit */
+        padding: 6px; /* Reduce padding for better fit */
     }
 }
 
