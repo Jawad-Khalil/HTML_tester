@@ -98,8 +98,8 @@ header {
 .profile-image {
     position: relative;
     z-index: 1;
-    width: 350px;
-    height: 350px;
+    width: 355px;
+    height: 355px;
     overflow: hidden;
     border-radius: 50%; /* Ensures the container is perfectly circular */
 }
