@@ -19,3 +19,10 @@ function scrollToTop() {
 }
 
 document.getElementById("scrollToTopBtn").addEventListener("click", scrollToTop);
+
+// Add this script at the end of your HTML or in a separate JS file
+document.addEventListener("DOMContentLoaded", function() {
+    const currentYear = new Date().getFullYear();
+    document.getElementById("footerYear").textContent = currentYear;
+});
+
