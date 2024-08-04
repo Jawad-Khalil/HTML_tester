@@ -432,17 +432,17 @@ section a {
 }
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: black;
     padding: 20px 0;
     text-align: center;
-    font-size: 14px;
-    color: #555;
+    font-size: 16px;
+    color: white;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 400px;
 }
 
 @media screen and (max-width: 768px) {
@@ -451,4 +451,3 @@ section a {
         font-size: 12px;
     }
 }
-
