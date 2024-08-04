@@ -299,11 +299,11 @@ section a {
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .education-table {
-        font-size: 10px; /* Smaller font size on smaller screens */
+        font-size: 9px; /* Smaller font size on smaller screens */
     }
 
     .education-table th, .education-table td {
-        padding: 4px; /* Reduced padding for smaller screens */
+        padding: 3px; /* Reduced padding for smaller screens */
     }
 
     .education-table th:nth-child(1), .education-table td:nth-child(1) {
