@@ -435,14 +435,14 @@ section a {
     background-color: black;
     padding: 20px 0;
     text-align: center;
-    font-size: 16px;
-    color: white;
+    font-size: 14px;
+    color: #555;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 400px;
+    padding: 0 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -451,3 +451,4 @@ section a {
         font-size: 12px;
     }
 }
+
