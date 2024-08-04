@@ -113,12 +113,12 @@ header {
 /* Responsive adjustments */
 @media screen and (max-width: 715px) {
     .profile-container {
-        height: 40vh; /* Adjust height for smaller screens */
+        height: 45vh; /* Adjust height for smaller screens */
     }
 
     .profile-image {
-        width: 250px; /* Smaller width for smaller screens */
-        height: 250px; /* Smaller height for smaller screens */
+        width: 230px; /* Smaller width for smaller screens */
+        height: 2300px; /* Smaller height for smaller screens */
     }
 }
 
