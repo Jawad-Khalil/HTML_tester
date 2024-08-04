@@ -120,19 +120,6 @@ header {
     }
 }
 
-
-@media screen and (max-width: 480px) {
-    .profile-container {
-        height: 30vh; /* Adjust height for very small screens */
-    }
-
-    .profile-image {
-        width: 150px; /* Smaller width for very small screens */
-        height: 150px; /* Smaller height for very small screens */
-    }
-}
-
-
 /* Main section styles */
 main {
     padding: 20px;
