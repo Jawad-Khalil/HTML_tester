@@ -116,8 +116,8 @@ header {
     }
 
     .profile-image {
-        width: 150px; /* Smaller width for very small screens */
-        height: 150px; /* Smaller height for very small screens */
+        width: 200px; /* Smaller width for very small screens */
+        height: 200px; /* Smaller height for very small screens */
     }
 }
 
