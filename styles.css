@@ -1,217 +1,267 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
 }
 
 header {
-    background-color: #3498db;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 header h1 {
   margin-bottom: 10px;
 }
 
-
 .navbar {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .menu-btn {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
 }
 
 .menu-btn:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 
 .nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: none;
-    position: absolute;
-    background-color: #3498db;
-    border-radius: 5px;
-    top: 60px;
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  background-color: #3498db;
+  border-radius: 5px;
+  top: 60px;
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
 }
 
 .nav-list li {
-    border-bottom: 1px solid #2980b9;
+  border-bottom: 1px solid #2980b9;
 }
 
 .nav-list li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .nav-list li a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-list li a:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 
 .welcome {
-    padding: 20px;
-    max-width: 1100px;
-    margin: 0 auto;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .welcome h2 {
   color: #2ecc71;
-    margin-top: 0;
+  margin-top: 0;
+}
+
+.welcome p {
+  text-indent: 2em; /* Adjust the value as needed */
 }
 
 .projects-details-section {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project h2 {
-    color: #3498db;
-    margin-top: 0;
+  color: #3498db;
+  margin-top: 0;
 }
 
 .project p {
-    color: #555;
+  color: #555;
 }
+
+/* CSS to bold the roles */
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    .projects-details-section {
-        padding: 10px;
-    }
+  .projects-details-section {
+    padding: 10px;
+  }
 
-    .project {
-        padding: 10px;
-    }
+  .project {
+    padding: 10px;
+  }
 }
 
 /* Scroll to Top Button */
 #scrollToTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #3498db;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 18px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
 }
 
 #scrollToTopBtn:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 
 /* Project Section CSS */
 
 /* Style for each project container */
 .project {
-    background-color: #fff; /* White background for the project container */
-    padding: 20px; /* Padding inside the project container */
-    margin-bottom: 20px; /* Space below each project container */
-    border-radius: 8px; /* Rounded corners for the project container */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff; /* White background for the project container */
+  padding: 20px; /* Padding inside the project container */
+  margin-bottom: 20px; /* Space below each project container */
+  border-radius: 8px; /* Rounded corners for the project container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Style for the project title */
 .project h2 {
-    color: #3498db; /* Blue color for the project title */
+  color: #3498db; /* Blue color for the project title */
 }
 
 /* Style for each section within the project */
-.skills, .role, .overview, .duration, .challenges, .client-team, .screenshot {
-    margin-top: 20px; /* Space above each section */
+.skills,
+.role,
+.overview,
+.duration,
+.challenges,
+.client-team,
+.screenshot,
+.job {
+  margin-top: 20px; /* Space above each section */
 }
 
 /* Style for section titles within the project */
-.skills h3, .role h3, .overview h3, .duration h3, .challenges h3, .client-team h3, .screenshot h3, .achievements h3 {
-    margin-bottom: 10px; /* Space below section titles */
-    color: #2ecc71; /* Red color for section titles */
+.skills h3,
+.role h3,
+.overview h3,
+.duration h3,
+.challenges h3,
+.client-team h3,
+.screenshot h3,
+.course-links h3,
+.achievements h3,
+.job h3 {
+  margin-bottom: 10px; /* Space below section titles */
+  color: #2ecc71; /* Red color for section titles */
 }
 
 /* Style for section text paragraphs */
-.skills p, .role p, .overview p, .duration p, .challenges p, .client-team p, .achievements li{
-    color: black; /* Dark color for section text */
-    font-weight: normal;
+.skills p,
+.overview p,
+.challenges p,
+.course-links p,
+.job p,
+.achievements li {
+  color: black; /* Dark color for section text */
+  font-weight: normal;
+}
+
+.role p,
+.client-team p,
+.duration p {
+  font-weight: bold;
+}
+
+.overview ul {
+  list-style-type: none; /* Removes default bullet points */
+  padding: 1;
+}
+
+.overview ul li {
+  margin: 10px 0; /* Adds space between each list item */
+}
+
+.overview ul li::before {
+  content: "•"; /* Adds custom bullet point */
+  color: #3498db; /* Custom bullet color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; /* Positions bullet point */
 }
 
 /* Style for the skills list */
 .skills-list {
-    list-style-type: none; /* Remove default list bullets */
-    padding: 0; /* Remove default padding */
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
 }
 
 /* Style for each skill item */
 .skills-list li {
-    background-color: #e0f7fa; /* Light blue background for skill items */
-    display: inline-block; /* Display items inline with wrapping */
-    margin: 5px; /* Space between skill items */
-    padding: 5px 10px; /* Padding inside each skill item */
-    border-radius: 15px; /* Rounded corners for skill items */
-    color: #e67e22; /* Dark teal color for text */
-    font-size: 14px; /* Font size for skill items */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for skill items */
-    font-weight: bold;
+  background-color: #e0f7fa; /* Light blue background for skill items */
+  display: inline-block; /* Display items inline with wrapping */
+  margin: 5px; /* Space between skill items */
+  padding: 5px 10px; /* Padding inside each skill item */
+  border-radius: 15px; /* Rounded corners for skill items */
+  color: #e67e22; /* Dark teal color for text */
+  font-size: 14px; /* Font size for skill items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for skill items */
+  font-weight: bold;
 }
 
 /* Style for project screenshots */
 .screenshot img {
-    width: 100%; /* Make images responsive to container width */
-    max-width: 600px; /* Maximum width for larger screens */
-    height: auto; /* Maintain aspect ratio of images */
-    border-radius: 8px; /* Rounded corners for images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for images */
-    margin-top: 10px; /* Space above images */
+  width: 100%; /* Make images responsive to container width */
+  max-width: 600px; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio of images */
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for images */
+  margin-top: 10px; /* Space above images */
 }
 
 /* Responsive adjustments for smaller screens */
 @media screen and (max-width: 768px) {
-    .skills-list li {
-        margin: 3px; /* Reduced margin for smaller screens */
-        padding: 3px 6px; /* Reduced padding for smaller screens */
-        font-size: 12px; /* Smaller font size for smaller screens */
-    }
+  .skills-list li {
+    margin: 3px; /* Reduced margin for smaller screens */
+    padding: 3px 6px; /* Reduced padding for smaller screens */
+    font-size: 12px; /* Smaller font size for smaller screens */
+  }
 
-    .screenshot img {
-        max-width: 100%; /* Ensure images fit within the viewport on smaller screens */
-    }
+  .screenshot img {
+    max-width: 100%; /* Ensure images fit within the viewport on smaller screens */
+  }
 }
