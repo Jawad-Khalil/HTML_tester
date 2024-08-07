@@ -241,28 +241,25 @@ header h1 {
     background-color: #f4f4f4;
 }
 
+/* Responsive styling for smaller screens */
 @media (max-width: 600px) {
-    .challenges table, .challenges thead, .challenges tbody, .challenges th, .challenges td, .challenges tr {
-        display: block;
+    .challenges {
+        font-size: 0.8em; /* Reduce font size */
     }
-    .challenges tr {
-        margin-bottom: 15px;
+    .challenges table {
+        width: 100%; /* Ensure table fits within the viewport */
+    }
+    .challenges th, .challenges td {
+        padding: 4px; /* Reduce padding */
+    }
+    .challenges th {
+        font-size: 0.9em; /* Reduce header font size */
     }
     .challenges td {
-        border: none;
-        position: relative;
-        padding-left: 50%;
-        text-align: left;
-    }
-    .challenges td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        width: 50%;
-        padding-left: 15px;
-        font-weight: bold;
+        font-size: 0.8em; /* Reduce cell font size */
     }
 }
+
 
 /* Style for the skills list */
 .skills-list {
