@@ -195,7 +195,7 @@ header h1 {
 .challenges p,
 .course-links p,
 .job p,
-.achievements li {
+.achievements li, .overview li, .course-links li {
   color: black; /* Dark color for section text */
   font-weight: normal;
 }
@@ -206,22 +206,62 @@ header h1 {
   font-weight: bold;
 }
 
-.overview ul {
+.overview ul, .course-links ul, .achievements ul {
   list-style-type: none; /* Removes default bullet points */
   padding: 1;
 }
 
-.overview ul li {
+.overview ul li, .course-links ul li, .achievements ul li {
   margin: 10px 0; /* Adds space between each list item */
 }
 
-.overview ul li::before {
+.achievements ul li::before, .course-links ul li::before, .overview ul li::before {
   content: "•"; /* Adds custom bullet point */
   color: #3498db; /* Custom bullet color */
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1em; /* Positions bullet point */
+}
+
+.challenges table {
+    width: 100%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.challenges th, .challenges td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.challenges th {
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 600px) {
+    .challenges table, .challenges thead, .challenges tbody, .challenges th, .challenges td, .challenges tr {
+        display: block;
+    }
+    .challenges tr {
+        margin-bottom: 15px;
+    }
+    .challenges td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+    .challenges td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+    }
 }
 
 /* Style for the skills list */
