@@ -44,11 +44,11 @@ header h1 {
   position: absolute;
   background-color: #3498db;
   border-radius: 5px;
-  top: 60px;
+  top: 50px;
   right: auto;
   left: 50%;
   transform: translateX(-50%);
-  width: 200px;
+  width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
