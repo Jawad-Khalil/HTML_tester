@@ -48,7 +48,7 @@ header h1 {
   right: auto;
   left: 50%;
   transform: translateX(-50%);
-  width: 350px;
+  width: 320px;
   box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
@@ -63,7 +63,7 @@ header h1 {
 
 .nav-list li a {
   display: block;
-  padding: 10px;
+  padding: 7px;
   color: white;
   text-decoration: none;
 }
