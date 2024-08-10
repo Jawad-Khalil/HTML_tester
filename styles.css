@@ -79,8 +79,7 @@ header h1 {
   padding: 10px;
   max-width: 1100px;
   margin: 0 auto;
-  margin-bottom: -10px;
-  
+  margin-bottom: -10px; 
 }
 
 .welcome h2 {
@@ -92,6 +91,28 @@ header h1 {
   text-indent: 2em; /* Adjust the value as needed */
   font-family: sans-serif; /* Arial, Helvetica, or similar */
   font-size: 18px; /* or 1rem */
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #2980b9;
 }
 
 .projects-details-section {
@@ -135,31 +156,33 @@ header h1 {
 .challenges,
 .client-team,
 .previews {
-  margin-top: 20px; /* Space above each section */
+  margin-top: 15px; /* Space above each section */
 }
 
 /* Style for section titles within the project */
 .skills h3,
+.job h3,
 .role h3,
 .overview h3,
+.links h3,
 .duration h3,
 .challenges h3,
 .client-team h3,
 .previews h3,
-.links h3,
-.achievements h3,
-.job h3 {
-  margin-bottom: 10px; /* Space below section titles */
+.achievements h3 {
+  margin-bottom: 15px; /* Space below section titles */
   color: #2ecc71; /* Red color for section titles */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add shadow */
+
 }
 
 /* Style for section text paragraphs */
 .skills p,
-.overview p,
-.challenges p,
-.links p,
 .job p,
-.achievements li, .overview li, .links li {
+.overview p, .overview li, 
+.links p, .links li,
+.challenges p,
+.achievements li {
   color: black; /* Dark color for section text */
   font-weight: normal;
 }
@@ -170,39 +193,66 @@ header h1 {
   font-weight: bold;
 }
 
-.overview ul, .links ul, .achievements ul {
+.overview ul, 
+.links ul, 
+.achievements ul {
   list-style-type: none; /* Removes default bullet points */
   padding: 1;
 }
 
-.overview ul li, .links ul li, .achievements ul li {
+.overview ul li, 
+.links ul li, 
+.achievements ul li {
   margin: 10px 0; /* Adds space between each list item */
 }
 
-.achievements ul li::before, .links ul li::before, .overview ul li::before {
-  content: "•"; /* Adds custom bullet point */
+.overview ul li::before {
+  content: "\27A4"; /* Change the bullet point symbol */
+  font-size: 1em; /* Increase the size of the bullet */
+  color: #3498db; /* Custom bullet color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em; /* Positions bullet point */
+}
+
+
+.links ul li::before {
+  content: "\1F517"; /* Change the bullet point symbol */
+  transform: rotate(-30deg); /* Rotate the bullet by 45 degrees */
+  font-size: 1.1em; /* Increase the size of the bullet */
+  color: #3498db; /* Custom bullet color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em; /* Positions bullet point */
+}
+
+.achievements ul li::before  {
+  content: "\2713"; /* Change the bullet point symbol */
+  font-size: 1.1em; /* Increase the size of the bullet */
   color: #3498db; /* Custom bullet color */
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -1em; /* Positions bullet point */
+  margin-left: -1.5em; /* Positions bullet point */
 }
 
 .challenges table {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
 .challenges th, .challenges td {
-    border: 1px solid #ddd;
+    border: 1.5px solid #7f8c8d;
     padding: 8px;
     text-align: left;
 }
 
 .challenges th {
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
 }
 
 /* Responsive styling for smaller screens */
@@ -233,73 +283,55 @@ header h1 {
 
 /* Style for each skill item */
 .skills-list li {
-  background-color: #e0f7fa; /* Light blue background for skill items */
-  display: inline-block; /* Display items inline with wrapping */
-  margin: 5px; /* Space between skill items */
-  padding: 5px 10px; /* Padding inside each skill item */
-  border-radius: 15px; /* Rounded corners for skill items */
-  color: #e67e22; /* Dark teal color for text */
-  font-size: 14px; /* Font size for skill items */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for skill items */
-  font-weight: bold;
+  background-color: #e0f7fa;  /* Light blue background */
+  display: inline-block;       /* Inline display with wrapping */
+  margin: 5px;                 /* Space between items */
+  padding: 5px 10px;           /* Padding inside each item */
+  border-radius: 15px;         /* Rounded corners */
+  color: #e67e22;              /* Text color */
+  font-size: 14px;             /* Font size */
+  font-weight: bold;           /* Bold text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
 }
 
 /* Style for project previews */
 .previews img {
-  width: 100%; /* Make images responsive to container width */
-  max-width: 600px; /* Maximum width for larger screens */
-  height: auto; /* Maintain aspect ratio of images */
-  border-radius: 8px; /* Rounded corners for images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for images */
-  margin-top: 10px; /* Space above images */
+  width: 100%;                 /* Responsive width */
+  max-width: 600px;            /* Max width for larger screens */
+  height: auto;                /* Maintain aspect ratio */
+  border-radius: 8px;          /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow effect */
+  margin-top: 10px;            /* Space above images */
+  border: 2px solid black;
+
 }
 
 /* Responsive adjustments for smaller screens */
 @media screen and (max-width: 768px) {
   .skills-list li {
-    margin: 3px; /* Reduced margin for smaller screens */
-    padding: 3px 6px; /* Reduced padding for smaller screens */
-    font-size: 12px; /* Smaller font size for smaller screens */
+    margin: 3px;               /* Reduced margin */
+    padding: 3px 6px;          /* Reduced padding */
+    font-size: 12px;           /* Smaller font size */
   }
 
   .previews {
-            flex: 1 1 45%; /* Two items will fit in one row on larger screens */
-            margin: 10px;
-        }
+    flex: 1 1 45%;             /* Two items per row */
+    margin: 10px;
+  }
 
-        .previews img {
-            max-width: 100%; /* Ensure images fit within the viewport on smaller screens */
-            height: auto;
-        }
-
-        @media (max-width: 600px) {
-            .previews {
-                flex-direction: column; /* Stack items vertically on smaller screens */
-            }
-
-            .previews {
-                flex: 1 1 100%; /* Each item will take full width on smaller screens */
-                margin: 5px 0;
-            }
-          
-/* Scroll to Top Button */
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #3498db;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 18px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: none;
+  .previews img {
+    max-width: 100%;           /* Ensure images fit on smaller screens */
+    height: auto;
+  }
 }
 
-#scrollToTopBtn:hover {
-  background-color: #2980b9;
+@media (max-width: 600px) {
+  .previews {
+    flex-direction: column;    /* Stack items vertically */
+  }
+
+  .previews {
+    flex: 1 1 100%;            /* Full width for each item */
+    margin: 5px 0;
+  }
 }
