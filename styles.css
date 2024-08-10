@@ -257,9 +257,6 @@ header h1 {
 
 /* Responsive styling for smaller screens */
 @media (max-width: 600px) {
-    .challenges {
-        font-size: 0.8em; /* Reduce font size */
-    }
     .challenges table {
         width: 100%; /* Ensure table fits within the viewport */
     }
@@ -302,7 +299,7 @@ header h1 {
   border-radius: 8px;          /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow effect */
   margin-top: 10px;            /* Space above images */
-  border: 2px solid black;
+  border: 1px solid black;
 
 }
 
