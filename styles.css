@@ -48,7 +48,7 @@ header h1 {
   right: auto;
   left: 50%;
   transform: translateX(-50%);
-  width: 320px;
+  width: 330px;
   box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
@@ -70,12 +70,17 @@ header h1 {
 
 .nav-list li a:hover {
   background-color: #2980b9;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
 }
 
 .welcome {
-  padding: 20px;
+  padding: 10px;
   max-width: 1100px;
   margin: 0 auto;
+  margin-bottom: -10px;
+  
 }
 
 .welcome h2 {
@@ -85,6 +90,8 @@ header h1 {
 
 .welcome p {
   text-indent: 2em; /* Adjust the value as needed */
+  font-family: 'Georgia', serif;
+  font-size: 18px; /* or 1rem */
 }
 
 .projects-details-section {
