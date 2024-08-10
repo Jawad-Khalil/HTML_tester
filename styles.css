@@ -90,7 +90,7 @@ header h1 {
 
 .welcome p {
   text-indent: 2em; /* Adjust the value as needed */
-  font-family: 'Georgia', serif;
+  font-family: sans-serif; /* Arial, Helvetica, or similar */
   font-size: 18px; /* or 1rem */
 }
 
@@ -102,20 +102,21 @@ header h1 {
 
 .project {
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #3498db;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 1px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Double border effect */
+  outline: 1px solid #2ecc71; /* Outer border */
+  outline-offset: 4px; /* Adjust spacing between borders */
 }
 
 .project h2 {
   color: #3498db;
   margin-top: 0;
-}
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
 
-.project p {
-  color: #555;
 }
 
 /* CSS to bold the roles */
@@ -160,7 +161,7 @@ header h1 {
   background-color: #fff; /* White background for the project container */
   padding: 20px; /* Padding inside the project container */
   margin-bottom: 20px; /* Space below each project container */
-  border-radius: 8px; /* Rounded corners for the project container */
+  border-radius: 5px; /* Rounded corners for the project container */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -171,13 +172,14 @@ header h1 {
 
 /* Style for each section within the project */
 .skills,
+.job, 
 .role,
 .overview,
+.links
 .duration,
 .challenges,
 .client-team,
-.screenshot,
-.job {
+.screenshot {
   margin-top: 20px; /* Space above each section */
 }
 
@@ -189,7 +191,7 @@ header h1 {
 .challenges h3,
 .client-team h3,
 .screenshot h3,
-.course-links h3,
+.links h3,
 .achievements h3,
 .job h3 {
   margin-bottom: 10px; /* Space below section titles */
@@ -200,9 +202,9 @@ header h1 {
 .skills p,
 .overview p,
 .challenges p,
-.course-links p,
+.links p,
 .job p,
-.achievements li, .overview li, .course-links li {
+.achievements li, .overview li, .links li {
   color: black; /* Dark color for section text */
   font-weight: normal;
 }
@@ -213,16 +215,16 @@ header h1 {
   font-weight: bold;
 }
 
-.overview ul, .course-links ul, .achievements ul {
+.overview ul, .links ul, .achievements ul {
   list-style-type: none; /* Removes default bullet points */
   padding: 1;
 }
 
-.overview ul li, .course-links ul li, .achievements ul li {
+.overview ul li, .links ul li, .achievements ul li {
   margin: 10px 0; /* Adds space between each list item */
 }
 
-.achievements ul li::before, .course-links ul li::before, .overview ul li::before {
+.achievements ul li::before, .links ul li::before, .overview ul li::before {
   content: "•"; /* Adds custom bullet point */
   color: #3498db; /* Custom bullet color */
   font-weight: bold;
