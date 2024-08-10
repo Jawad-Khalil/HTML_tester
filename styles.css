@@ -100,14 +100,21 @@ header h1 {
   margin: 0 auto;
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .projects-details-section {
+    padding: 10px;
+  }
+}
+
 .project {
   margin-bottom: 20px;
   border: 1px solid #3498db;
   padding: 15px;
-  border-radius: 1px;
+  border-radius: 5px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-/* Double border effect */
+  /* Double border effect */
   outline: 1px solid #2ecc71; /* Outer border */
   outline-offset: 4px; /* Adjust spacing between borders */
 }
@@ -116,58 +123,6 @@ header h1 {
   color: #3498db;
   margin-top: 0;
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
-
-}
-
-/* CSS to bold the roles */
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .projects-details-section {
-    padding: 10px;
-  }
-
-  .project {
-    padding: 10px;
-  }
-}
-
-/* Scroll to Top Button */
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #3498db;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 18px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: none;
-}
-
-#scrollToTopBtn:hover {
-  background-color: #2980b9;
-}
-
-/* Project Section CSS */
-
-/* Style for each project container */
-.project {
-  background-color: #fff; /* White background for the project container */
-  padding: 20px; /* Padding inside the project container */
-  margin-bottom: 20px; /* Space below each project container */
-  border-radius: 5px; /* Rounded corners for the project container */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-/* Style for the project title */
-.project h2 {
-  color: #3498db; /* Blue color for the project title */
 }
 
 /* Style for each section within the project */
@@ -179,7 +134,7 @@ header h1 {
 .duration,
 .challenges,
 .client-team,
-.screenshot {
+.previews {
   margin-top: 20px; /* Space above each section */
 }
 
@@ -190,7 +145,7 @@ header h1 {
 .duration h3,
 .challenges h3,
 .client-team h3,
-.screenshot h3,
+.previews h3,
 .links h3,
 .achievements h3,
 .job h3 {
@@ -289,8 +244,8 @@ header h1 {
   font-weight: bold;
 }
 
-/* Style for project screenshots */
-.screenshot img {
+/* Style for project previews */
+.previews img {
   width: 100%; /* Make images responsive to container width */
   max-width: 600px; /* Maximum width for larger screens */
   height: auto; /* Maintain aspect ratio of images */
@@ -307,24 +262,44 @@ header h1 {
     font-size: 12px; /* Smaller font size for smaller screens */
   }
 
-  .screenshot {
+  .previews {
             flex: 1 1 45%; /* Two items will fit in one row on larger screens */
             margin: 10px;
         }
 
-        .screenshot img {
+        .previews img {
             max-width: 100%; /* Ensure images fit within the viewport on smaller screens */
             height: auto;
         }
 
         @media (max-width: 600px) {
-            .screenshot {
+            .previews {
                 flex-direction: column; /* Stack items vertically on smaller screens */
             }
 
-            .screenshot {
+            .previews {
                 flex: 1 1 100%; /* Each item will take full width on smaller screens */
                 margin: 5px 0;
             }
           
-          
+/* Scroll to Top Button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #2980b9;
+}
